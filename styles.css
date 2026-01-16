@@ -105,7 +105,7 @@ body {
 
 .card_main h2 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .card_desc {
@@ -143,6 +143,22 @@ body {
   .card{
     width: 384px;
     height: 522px;
+  }
+
+  .tag{
+    font-size: 14px;
+  }
+
+  .card_main time{
+    font-size: 14px;
+  }
+
+  .card_main h2{
+    font-size: 24px;
+  }
+
+  .card_desc{
+    font-size: 16px;
   }
 
   .footer{
