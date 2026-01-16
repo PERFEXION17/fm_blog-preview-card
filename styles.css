@@ -21,38 +21,119 @@
   --black: hsl(0, 0%, 0%);
   --gray-500: hsl(0, 0%, 42%);
   --gray-900: hsl(0, 0%, 7%);
-  --font: 'Figtree', sans-serif;
-  --font-italic: 'Figtree-Italic', sans-serif;
+  --font: "Figtree", sans-serif;
+  --font-italic: "Figtree-Italic", sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 
-body{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-colour);
-    color: var(--black);
-    font-family: var(--font);
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--primary-colour);
+  color: var(--gray-900);
+  font-family: var(--font);
+}
+
+.card {
+  width: 327px;
+  height: 501px;
+  padding: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-direction: column;
+  background: var(--white);
+  border: 1px solid var(--gray-900);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0;
+}
+
+.card_img {
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card_main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tag {
+  width: max-content;
+  margin-bottom: 12px;
+  padding: 4px 12px;
+  background: var(--primary-colour);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.card_main time {
+  font-size: 12px;
+}
+
+.card_main h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card_desc {
+  color: var(--gray-500);
+  font-size: 14px;
+}
+
+.card footer {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.card footer img {
+  width: 32px;
+  height: 32px;
+}
+
+.card footer p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer {
+  position: absolute;
+  bottom: 24px;
+  text-align: center;
+  font-size: 14px;
 }
